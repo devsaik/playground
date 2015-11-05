@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('saiapps')
+    .module('testingpod')
     .directive('acmeNavbar', acmeNavbar);
 
   /** @ngInject */
@@ -11,7 +11,6 @@
       restrict: 'E',
       templateUrl: 'app/components/navbar/navbar.html',
       scope: {
-          creationDate: '='
       },
       controller: NavbarController,
       controllerAs: 'vm',

@@ -1,11 +1,9 @@
-/* global malarkey:false, toastr:false, moment:false */
+/* global toastr:false, moment:false */
 (function() {
   'use strict';
 
   angular
-    .module('saiapps')
-    .constant('malarkey', malarkey)
-    .constant('toastr', toastr)
+    .module('testingpod')
     .constant('moment', moment);
 
 })();

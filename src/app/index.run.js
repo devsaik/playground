@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('saiapps')
+    .module('testingpod')
     .run(runBlock);
 
   /** @ngInject */
