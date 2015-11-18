@@ -3,10 +3,10 @@
 
   angular
     .module('testingpod')
-    .controller('GlobalMboxController', GlobalMboxController);
+    .controller('GlobalVECDirectNavController', GlobalVECDirectNavController);
 
   /** @ngInject */
-  function GlobalMboxController() {
+  function GlobalVECDirectNavController() {
     activate();
 
     function activate() {

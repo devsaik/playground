@@ -12,15 +12,10 @@
     activate();
 
     function activate() {
+      //TPOD_DEMO_mboxCreate_PleaseKeepDuringBeta
+      //To demonstrate 'mboxCreate' function in reference app
        mboxCreate('mboxCreateExample');
     }
 
-    //function getWebDevTec() {
-    //  vm.implementationMethods = webDevTec.getTec();
-    //
-    //  angular.forEach(vm.implementationMethods, function(implementationMethod) {
-    //    implementationMethod.rank = Math.random();
-    //  });
-    //}
   }
 })();

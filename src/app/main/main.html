@@ -17,7 +17,7 @@
   </div>
 
   <div class="row">
-    <div class="col-sm-6 col-md-4" ng-repeat="implementationMethod in main.implementationMethods | orderBy:'rank'">
+    <div class="col-sm-6 col-md-4" ng-repeat="implementationMethod in main.implementationMethods"> <!-- | orderBy:'rank'">-->
       <div class="thumbnail">
         <img class="pull-right" ng-src="assets/images/{{ implementationMethod.logo }}" alt="{{ implementationMethod.title }}">
         <div class="caption">

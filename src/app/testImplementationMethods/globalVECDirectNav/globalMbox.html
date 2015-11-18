@@ -15,7 +15,7 @@
 
     <h3>Used with VEC: Yes</h3>
     <h3>Implementation</h3>
-    <pre>n/a</pre> (Note: technically this uses getAndApplyOffer() but it does so dynamically, without explicit invocation?)
+    <pre>This is the same as the other global mbox but with VEC setup using direct-nav</pre>
     <p class="rationale">
     <h3>Rationale:</h3>
     You have a straightforward "replace content" style split test and the Adobe
@@ -47,10 +47,17 @@
     <h2>Video Demonstration of setup in Target</h2>
 
     <script type="text/javascript">
-        swfobject.embedSWF("/assets/video/globalMboxVEC.swf", "demoVideo", "1300", "800", "9.0.0");
+        swfobject.embedSWF("/assets/video/globalVECDirectNav.swf", "demoVideo1", "1100", "700", "9.0.0");
+        swfobject.embedSWF("/assets/video/globalVECDirectNav2.swf", "demoVideo2", "1100", "700", "9.0.0");
     </script>
 
-    <div id="demoVideo">
+    <h3>Issues with test executing in a wider context</h3>
+    <div id="demoVideo1">
+        <p>OOPs...is flash enabled?</p>
+    </div>
+
+    <h3>Corrected URL Implementation</h3>
+    <div id="demoVideo2">
         <p>OOPs...is flash enabled?</p>
     </div>
 

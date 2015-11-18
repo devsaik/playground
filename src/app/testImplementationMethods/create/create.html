@@ -3,18 +3,53 @@
     <div>
         <acme-navbar />
     </div>
+    <h2>Adobe Target + Angular Test App</h2>
+    <p class="lead">
+        <img src="assets/images/angular.png" width="50" />
+        <img src="assets/images/capitalOne.jpg" width="50" alt="Capital One">
+        <img src="assets/images/adobe.png" width="50" alt="Adobe"><br>
+    </p>
+    <a href="http://adobe-marketing-cloud.github.io/target-sdk-libraries/demos/examples/classic/mbox_create.html"
+       target="_blank">Adobe Example</a>
+
+    <h3>Used with VEC: No</h3>
+    <h3>Implementation</h3>
+    <pre>mboxCreate('mboxCreateExample');</pre>
+    <p class="rationale">
+    <h3>Rationale:</h3>
+    You have an "offer" - an Adobe concept of "html snippet" defined in the Content
+    section of Adobe Target. You write specific code to pull down that offer and
+    the Adobe code replaces the content by locating an mbox and inserting content.
+    </p>
 
     <div class="jumbotron text-center">
-        <h2>Adobe Target + Angular Test App</h2>
-        <h3>MBox.create() Test</h3>
-        <p class="lead">
-            <img src="assets/images/angular.png" />
-            <img src="assets/images/capitalOne.jpg" width="100" alt="Capital One">
-            <img src="assets/images/adobe.png" width="100" alt="Adobe"><br>
-        </p>
         <div class="mboxDefault">
-            Default Content
+            <i>The Test may not have worked. This is default content</i>
         </div>
+    </div>
+
+    <p>
+        Pros:
+        <ul>
+            <li>This is really just offered as  a migration path</li>
+        </ul>
+
+        Cons:
+        <ul>
+            <li>Not intended to be a forward-path</li>
+            <li>Not viable with VEC as the offer to be presented is "inline" in the code</li>
+        </ul>
+
+    </p>
+
+    <h2>Video Demonstration of setup in Target</h2>
+
+    <script type="text/javascript">
+        swfobject.embedSWF("/assets/video/mboxCreate.swf", "demoVideo", "900", "650", "9.0.0");
+    </script>
+
+    <div id="demoVideo">
+        <p>OOPs...is flash enabled?</p>
     </div>
 
 </div>

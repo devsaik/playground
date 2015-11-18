@@ -13,33 +13,31 @@
     <a href="http://adobe-marketing-cloud.github.io/target-sdk-libraries/demos/examples/classic/global_mbox.html"
        target="_blank">Adobe Example</a>
 
-    <h3>Used with VEC: Yes</h3>
+    <h3>Used with VEC: No</h3>
     <h3>Implementation</h3>
-    <pre>n/a</pre> (Note: technically this uses getAndApplyOffer() but it does so dynamically, without explicit invocation?)
+    <pre>adobe.target.getAndApplyOffer('namedOfferExample')</pre>
     <p class="rationale">
     <h3>Rationale:</h3>
-    You have a straightforward "replace content" style split test and the Adobe
-    Visual Experience Composer readily handles the types of content replacement
-    you are doing. Simply the inclusion of at.js should support this.
+    You have a canned offer and want to use the "global mbox" to replace its contents.
     </p>
 
     <div class="jumbotron text-center">
+        <div class="namedOfferExample">
             <i>The Test may not have worked. This is default content</i>
+        </div>
     </div>
 
     <p>
         Pros:
     <ul>
-        <li>Easy setup</li>
-        <li>For simple tests this is very marketing-friendly</li>
-        <li>Potentially not tightly coupled with code</li>
+        <li>Tightly controlled</li>
+        <li>Highly customizable</li>
     </ul>
 
     Cons:
     <ul>
-        <li>If customization is required (e.g. page params) then code changes are needed</li>
-        <li>Customizations such as above must be positionally aware - i.e. come before at.js</li>
-        <li>"Route monitoring" for detecting page state to apply test may have caveats (TBD)</li>
+        <li>Developer centric</li>
+        <li>SDLC lifecycle likely required per test due to 'named offer' strategy</li>
     </ul>
 
     </p>
@@ -47,7 +45,7 @@
     <h2>Video Demonstration of setup in Target</h2>
 
     <script type="text/javascript">
-        swfobject.embedSWF("/assets/video/globalMboxVEC.swf", "demoVideo", "1300", "800", "9.0.0");
+        swfobject.embedSWF("/assets/video/getAndApplyOffer.swf", "demoVideo", "1200", "660", "9.0.0");
     </script>
 
     <div id="demoVideo">
