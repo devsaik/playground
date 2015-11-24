@@ -21,13 +21,16 @@
     activate();
 
     function activate() {
-      adobe.target.getAndApplyOffer({  //Looks like this is trying to load an offer "for" an mbox?
+      adobe.target.getOffer({  //Looks like this is trying to load an offer "for" an mbox?
         mbox: 'namedOfferExample',   //relates to server knowledge of this
-        selector: '.namedOfferExample', //what to replace content for (same as mbox div)
         params: {},
         success: function(response) {
           if(console&&console.info)console.info('in GlobalMboxWithOfferController SUCCESS');
           console.info(response);
+          adobe.target.applyOffer({
+            selector: '.namedOfferExample', //what to replace content for (same as mbox div)
+            offer: response
+          });
         },
         error: function(status,error) {
           if(console&&console.info)console.info('in GlobalMboxWithOfferController ERROR');
